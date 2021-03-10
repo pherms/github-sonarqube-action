@@ -28,7 +28,7 @@ jobs:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
 ```
-But you can also specify a custom project key. Add this in the with: part of the yaml.
+When you pre-provision a project in SonarQube, you can specify a project key. You can make sure SonarQube runs the analysis on this project, by specifying the project key in the with: block of the yaml as shown in the code block below.
 ```yaml
 with:
   projectKey: my-custom-project-key
