@@ -13,6 +13,5 @@ fi
 sonar-scanner \
 -Dsonar.host.url=${INPUT_HOST} \
 -Dsonar.projectKey=${INPUT_PROJECTKEY} \
--Dsonar.projectName=${INPUT_PROJECTNAME} \
 -Dsonar.login=${INPUT_LOGIN} \
 -Dsonar.password=${INPUT_PASSWORD} \

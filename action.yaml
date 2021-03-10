@@ -15,10 +15,6 @@ inputs:
     description: "The project's unique key. Allowed characters are: letters, numbers, -, _, . and :, with at least one non-digit."
     required: true
     default: ""
-  projectName:
-    description: "The project's name as pre-defined in SonarQube."
-    required: false
-    default: ""
   projectBaseDir:
     description: "Set the sonar.projectBaseDir analysis property"
     required: false

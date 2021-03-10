@@ -28,11 +28,10 @@ jobs:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
 ```
-But you can also specify a custom project name and project key. Add these in the with: part of the yaml.
+But you can also specify a custom project key. Add this in the with: part of the yaml.
 ```yaml
 with:
   projectKey: my-custom-project-key
-  projectName: My project name
 ```
 
 ## Secrets and other variables
@@ -42,7 +41,6 @@ the following variables can be used:
 - login: the login name or token of a SonarQube user that is allowed to perform an analysis (required)
 - password: the password of a SonarQube user. Should be left blank if a login uses a token (optional)
 - projectKey: the projectkey of a project (optional)
-- projectName: the name of the project in SonarQube. Copy-paste the project name from SonarQube if already defined in SonarQube.
 
 ## License
 
