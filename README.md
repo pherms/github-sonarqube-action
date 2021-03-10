@@ -1,9 +1,9 @@
 # SonarQube action for github
 
-This action provides SonarQube code scanning to your project.
-SonarQube scans your code for vulnerabilities, bugs and codesmells in more than 20 programming languages.
+This action provides [SonarQube](https://www.sonarqube.org/) code scanning to your project.
+[SonarQube](https://www.sonarqube.org/) scans your code for vulnerabilities, bugs and codesmells in more than 20 programming languages.
 
-SonarQube is an open-source platform, developed by SOnarsource.
+[SonarQube](https://www.sonarqube.org/) is an open-source platform, developed by Sonarsource.
 
 This action does not support SonarCloud!
 
