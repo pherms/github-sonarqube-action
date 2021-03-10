@@ -1,0 +1,31 @@
+name: "SonarQube Actions"
+description: "Scan your code with SonarQube Scanner to detect bugs, vulnerabilities and code smells. Provides option to define a pre-configured project in SonarQube."
+author: "Pascal Herms"
+branding:
+  icon: "check"
+  color: "green"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+inputs:
+  host:
+    description: "SonarQube server URL"
+    required: true
+  projectKey:
+    description: "The project's unique key. Allowed characters are: letters, numbers, -, _, . and :, with at least one non-digit."
+    required: true
+    default: ""
+  projectName:
+    description: "The project's name as pre-defined in SonarQube."
+    required: false
+    default: ""
+  projectBaseDir:
+    description: "Set the sonar.projectBaseDir analysis property"
+    required: false
+    default: "."
+  login:
+    description: "Login or authentication token of a SonarQube user"
+    required: true
+  password:
+    description: "Password that goes with the sonar.login username. This should be left blank if an authentication token is being used."
+    required: false
